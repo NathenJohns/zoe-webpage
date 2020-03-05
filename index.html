@@ -5,174 +5,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Faith, Love & Hope</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_iKFqIcgKPuH9tjEsd7wW3");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contactForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // generate the contact number value
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('name', 'emailaddress', 'message', this);
+            });
+        }
+    </script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <!-- Navbar -->
-    <header id="navbar">
-        <ul>
-            <li><a href="#home" onclick="toggle()">Home</a></li>
-            <li><a href="#about" onclick="toggle()">About</a></li>
-            <li><a href="#packages" onclick="toggle()">Packages</a></li>
-            <li><a href="#contact" onclick="toggle()">Contact</a></li>
-        </ul>
-        <div class="toggle" onclick="toggle()"></div>
-    </header>
 
-    <!-- Banner -->
-    <section class="banner" id="home">
-    </section>
+    <body>
+        <!-- Navbar -->
+        <header id="navbar">
+            <ul>
+                <li><a href="#home" onclick="toggle()">Home</a></li>
+                <li><a href="#about" onclick="toggle()">About</a></li>
+                <li><a href="#packages" onclick="toggle()">Packages</a></li>
+                <li><a href="#contact" onclick="toggle()">Contact</a></li>
+            </ul>
+            <div class="toggle" onclick="toggle()"></div>
+        </header>
 
-    <!-- About -->
-    <section class="sec" id="about">
-        <div class="content">
-            <div class="mxw800p">
-                <h3>What Makes Me Unique?</h3>
-                <div class="about-info">
-                    <div class="about-pic"></div>
-                    <p>"I’ve always thought that there is nothing more important than
-                        love, that everything you do should be done with love; especially
-                        planning your wedding. People tend to get lost in the details and
-                        forget what’s important. I believe taking away the pressure of
-                        planning, helping people focus on each other and why they are
-                        getting married is a job worth doing. <br><br>"Being trusted to manage the worry and confusion,
-                        commissioned to arrange the details and keep
-                        the
-                        couple excited and expectant, makes the job worthwhile. Knowing that your hard work is
-                        appreciated and seeing the happiness it brings to others is priceless, and why I started this
-                        business; so that every wedding is planned and accomplished with faith, hope and love." -- Zoe
-                        Walters</p>
-                    <p></p>
-                </div>
-            </div>
-    </section>
+        <!-- Banner -->
+        <section class="banner" id="home">
+        </section>
 
-    <!-- Services -->
-    <section class="sec" id="packages">
-        <div class="content">
-            <div class="mxw800p">
-                <h3>How Can I Be of Help?</h3>
-                <p>Being able to tailor your wedding to your budget and needs is key.
-                    In order to achieve this I have created several different services
-                    available for you.</p>
-            </div>
-            <div class="services">
-                <div class="box">
-                    <div class="content">
-                        <h2>Full Package</h2>
-                        <p>The Full Package is the best option to take away the stress of planning from the start. This
-                            package can be edited to fit each couple and engage the services of a wedding planner to the
-                            full.</p>
-                        <p>This package includes:</p>
-                        <ul>
-                            <li>Budget Planning</li>
-                            <li>Vision/Theme Discussion</li>
-                            <li>Venue Sourcing</li>
-                            <li>Vendor Sorting</li>
-                            <li>Paperwork Help</li>
-                            <li>Timeline & Checklist</li>
-                            <li>Oversee Venue Setup</li>
-                            <li>Wedding Day Attendance</li>
-                        </ul>
+        <!-- About -->
+        <section class="sec" id="about">
+            <div class="content">
+                <div class="mxw800p">
+                    <h3>What Makes Me Unique?</h3>
+                    <div class="about-info">
+                        <div class="about-pic"></div>
+                        <p>"I’ve always thought that there is nothing more important than
+                            love, that everything you do should be done with love; especially
+                            planning your wedding. People tend to get lost in the details and
+                            forget what’s important. I believe taking away the pressure of
+                            planning, helping people focus on each other and why they are
+                            getting married is a job worth doing. <br><br>"Being trusted to manage the worry and
+                            confusion,
+                            commissioned to arrange the details and keep
+                            the
+                            couple excited and expectant, makes the job worthwhile. Knowing that your hard work is
+                            appreciated and seeing the happiness it brings to others is priceless, and why I started
+                            this
+                            business; so that every wedding is planned and accomplished with faith, hope and love." --
+                            Zoe
+                            Walters</p>
+                        <p></p>
                     </div>
                 </div>
-                <div class="box">
-                    <div class="content">
-                        <h2>Part Package</h2>
-                        <p>The Part Package is good for those who have already started planning; but would like or need
-                            an extra hand pulling together the details you've arranged, and the ones that need tying in.
-                            This package can be personalised to make sure you get the wedding day you've been wishing
-                            for.</p>
-                        <p>This package includes:</p>
-                        <ul>
-                            <li>Vendor Sourcing/Organising</li>
-                            <li>Payment Co-ordination</li>
-                            <li>Timeline & Checklist</li>
-                            <li>Organisation of 'To Do List'</li>
-                            <li>*Extra option - Wedding Day Attendance</li>
-                        </ul>
-                    </div>
+        </section>
+
+        <!-- Services -->
+        <section class="sec" id="packages">
+            <div class="content">
+                <div class="mxw800p">
+                    <h3>How Can I Be of Help?</h3>
+                    <p>Being able to tailor your wedding to your budget and needs is key.
+                        In order to achieve this I have created several different services
+                        available for you.</p>
                 </div>
-                <div class="box">
-                    <div class="content">
-                        <h2>Day of Package</h2>
-                        <p>Sit back and relax, knowing that there is someone on hand to take care of everything on your
-                            special day. Establishing contact with your chosen vendors and venue, familiarising myself
-                            with your wishes and vision of how you want your day to proceed, will be done in advance;
-                            allowing the stressful details of the day to be dealt with for you. </p>
-                        <p>This package includes:</p>
-                        <ul>
-                            <li>Prior Contact with Vendors/Venue</li>
-                            <li>Confirmation of Scheduling</li>
-                            <li>Timeline</li>
-                            <li>Service Alignment</li>
-                            <li>First Point of Contact on the Day</li>
-                        </ul>
+                <div class="services">
+                    <div class="box">
+                        <div class="content">
+                            <h2>Full Package</h2>
+                            <p>The Full Package is the best option to take away the stress of planning from the start.
+                                This
+                                package can be edited to fit each couple and engage the services of a wedding planner to
+                                the
+                                full.</p>
+                            <p>This package includes:</p>
+                            <ul>
+                                <li>Budget Planning</li>
+                                <li>Vision/Theme Discussion</li>
+                                <li>Venue Sourcing</li>
+                                <li>Vendor Sorting</li>
+                                <li>Paperwork Help</li>
+                                <li>Timeline & Checklist</li>
+                                <li>Oversee Venue Setup</li>
+                                <li>Wedding Day Attendance</li>
+                            </ul>
+                        </div>
                     </div>
+                    <div class="box">
+                        <div class="content">
+                            <h2>Part Package</h2>
+                            <p>The Part Package is good for those who have already started planning; but would like or
+                                need
+                                an extra hand pulling together the details you've arranged, and the ones that need tying
+                                in.
+                                This package can be personalised to make sure you get the wedding day you've been
+                                wishing
+                                for.</p>
+                            <p>This package includes:</p>
+                            <ul>
+                                <li>Vendor Sourcing/Organising</li>
+                                <li>Payment Co-ordination</li>
+                                <li>Timeline & Checklist</li>
+                                <li>Organisation of 'To Do List'</li>
+                                <li>*Extra option - Wedding Day Attendance</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="content">
+                            <h2>Day of Package</h2>
+                            <p>Sit back and relax, knowing that there is someone on hand to take care of everything on
+                                your
+                                special day. Establishing contact with your chosen vendors and venue, familiarising
+                                myself
+                                with your wishes and vision of how you want your day to proceed, will be done in
+                                advance;
+                                allowing the stressful details of the day to be dealt with for you. </p>
+                            <p>This package includes:</p>
+                            <ul>
+                                <li>Prior Contact with Vendors/Venue</li>
+                                <li>Confirmation of Scheduling</li>
+                                <li>Timeline</li>
+                                <li>Service Alignment</li>
+                                <li>First Point of Contact on the Day</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="sec contact" id="contact">
+            <div class="content">
+                <div class="mxw800p">
+                    <h3>Get In Touch</h3>
+                    <p>I am currently organising weddings across the Devon area.</p>
+                    <p>
+                        Email me a little about yourself and any details about your wedding;
+                        the dates you're looking at etc. and which package you're interested
+                        in, and I will get back to you as soon as possible to set up your
+                        consultation.
+                    </p>
+                </div>
+                <div class="contactForm">
+                    <form id="contactForm" onsubmit="return sendMail(this);" method="POST">
+                        <div class="row100">
+                            <div class="inputBx50">
+                                <input id="name" name="name" type="text" placeholder="Full Name" required>
+                            </div>
+                            <div class="inputBx50">
+                                <input id="emailaddress" name="emailaddress" type="text" placeholder="Email Address"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="row100">
+                            <div class="inputBx100">
+                                <textarea id="message" placeholder="Message" name="message" required></textarea>
+                            </div>
+                        </div>
+                        <div class="row100">
+                            <div class="inputBx100">
+                                <input type="submit" name="" value="Send">
+                            </div>
+                        </div>
+                    </form>
                 </div>
 
+                <div class="social">
+                    <a href="https://www.instagram.com/withfaithhopeandlove/?hl=en" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/FaithHopeandLo9" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <p class="copyright">Design & Developed by Nathen Johns</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact -->
-    <section class="sec contact" id="contact">
-        <div class="content">
-            <div class="mxw800p">
-                <h3>Get In Touch</h3>
-                <p>I am currently organising weddings across the Devon area.</p>
-                <p>
-                    Email me a little about yourself and any details about your wedding;
-                    the dates you're looking at etc. and which package you're interested
-                    in, and I will get back to you as soon as possible to set up your
-                    consultation.
-                </p>
-            </div>
-            <div class="contactForm">
-                <form action="">
-                    <div class="row100">
-                        <div class="inputBx50">
-                            <input type="text" placeholder="Full Name">
-                        </div>
-                        <div class="inputBx50">
-                            <input type="text" placeholder="Email Address">
-                        </div>
-                    </div>
-                    <div class="row100">
-                        <div class="inputBx100">
-                            <textarea placeholder="Message" name=""></textarea>
-                        </div>
-                    </div>
-                    <div class="row100">
-                        <div class="inputBx100">
-                            <input type="submit" name="" value="Send">
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <div class="social">
-                <a href="https://www.instagram.com/withfaithhopeandlove/?hl=en" target="_blank"><i
-                        class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/FaithHopeandLo9" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
-            <p class="copyright">Design & Developed by Nathen Johns</p>
-        </div>
-    </section>
-
-    <!-- Javascript -->
-    <script src="https://kit.fontawesome.com/71ebc3f96b.js" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        window.addEventListener("scroll", function () {
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        })
-        function toggle() {
-            var header = document.querySelector("header");
-            header.classList.toggle("active");
-        }
-    </script>
-</body>
+        <!-- Javascript -->
+        <script src="https://kit.fontawesome.com/71ebc3f96b.js" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function () {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+            function toggle() {
+                var header = document.querySelector("header");
+                header.classList.toggle("active");
+            }
+        </script>
+        <script src="/js/sendEmail.js"></script>
+    </body>
 
 </html>
