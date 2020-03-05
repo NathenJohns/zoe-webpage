@@ -14,7 +14,6 @@
     <script type="text/javascript">
         window.onload = function () {
             document.getElementById('contactForm').addEventListener('submit', function (event) {
-                event.preventDefault();
                 emailjs.sendForm('name', 'emailaddress', 'message', this);
             });
         }
@@ -157,7 +156,7 @@
                     </p>
                 </div>
                 <div class="contactForm">
-                    <form id="contactForm" onsubmit="return sendMail(this);" method="POST">
+                    <form onsubmit="return sendMail(this);" method="POST" id="contactForm">
                         <div class="row100">
                             <div class="inputBx50">
                                 <input id="name" name="name" type="text" placeholder="Full Name" required>
