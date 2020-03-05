@@ -1,0 +1,19 @@
+{
+  "name": "wedding-planner-webpage",
+  "version": "1.0.0",
+  "description": "wedding planner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathenJohns/zoe-webpage.git"
+  },
+  "author": "Nathen Johns",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NathenJohns/zoe-webpage/issues"
+  },
+  "homepage": "https://github.com/NathenJohns/zoe-webpage#readme"
+}
