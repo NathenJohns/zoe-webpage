@@ -14,6 +14,7 @@
     <script type="text/javascript">
         window.onload = function () {
             document.getElementById('contactForm').addEventListener('submit', function (event) {
+                event.preventDefault();
                 emailjs.sendForm('name', 'emailaddress', 'message', this);
             });
         }
