@@ -234,6 +234,7 @@ p {
     position: relative;
     list-style: none;
     margin-top: 5px;
+    font-weight: 300;
 }
 
 .contact {
@@ -446,6 +447,8 @@ p {
     }
 
     .about-pic {
+        width: 15em;
+        height: 20em;
         margin-left: 5%;
     }
 
