@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;600&family=Lato:wght@100;300;400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Lato, sans-serif;
 }
 
 html {
@@ -54,6 +57,7 @@ header ul {
 header ul li {
     position: relative;
     list-style: none;
+    margin: 10px 25px 10px 25px;
 }
 
 header ul li a {
@@ -80,15 +84,38 @@ header.sticky ul li a:hover {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: url(../css/img/hopelove.png);
+    background: url(../css/img/background.jfif);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 80%;
+}
+
+.banner>div>h1 {
+    font-family: Gelasio, sans-serif;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 100px;
+    mix-blend-mode: normal;
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.banner>div>h3 {
+    font-weight: 100;
+    font-family: Gelasio, sans-serif;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 65px;
 }
 
 .sec {
-    padding: 100px;
+    padding: 10px;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -102,13 +129,25 @@ header.sticky ul li a:hover {
 }
 
 #about {
-    background: #b2c0d1;
+    background: #fff;
+}
+
+.about-box {
+    height: 100%;
+    width: 100%;
+    background: #2b2b2b;
+    border: 1px solid #2b2b2b;
+    padding: 0 25px;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .about-info {
+    background: #2b2b2b;
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 30px;
     max-width: 100%;
     margin-top: 40px;
@@ -120,17 +159,17 @@ header.sticky ul li a:hover {
     background-image: url("../css/img/about.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    border-radius: 5%;
+    border: 1px solid #2b2b2b;
 }
 
 .about-info p {
     color: #fff;
     font-size: 18px;
-    font-style: italic;
 }
 
 #packages {
-    background: #b2d1d1;
+    background: #2b2b2b;
+    padding-top: 50px;
 }
 
 .mxw800p {
@@ -140,9 +179,10 @@ header.sticky ul li a:hover {
 
 h3 {
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 300;
     margin-bottom: 10px;
     color: #fff;
+    font-family: Gelasio, sans-serif;
 }
 
 p {
@@ -151,6 +191,9 @@ p {
     font-weight: 300;
     margin-bottom: 20px;
     letter-spacing: 1px;
+}
+#packages .content .mxw800p p {
+    color: #fff;
 }
 
 .services {
@@ -194,11 +237,15 @@ p {
 }
 
 .contact {
-    background: #d1b2b2;
+    background: #fff;
+}
+
+.contact h3 {
+    padding-top: 50px;
 }
 
 .contact h3, .contact p {
-    color: #fff;
+    color: #2b2b2b;
 }
 
 .contactForm {
@@ -230,8 +277,8 @@ p {
 .contactForm .row100 input, .contactForm .row100 textarea {
     position: relative;
     border: none;
-    border-bottom: 1px solid #fff;
-    color: #fff;
+    border-bottom: 1px solid #2b2b2b7a;
+    color: #2b2b2b;
     background: transparent;
     width: 100%;
     padding: 10px 0;
@@ -248,12 +295,12 @@ p {
 
 .contactForm .row100 input::placeholder,
 .contactForm .row100 textarea::placeholder {
-    color: rgba(255,255,255,0.5);
+    color: #2b2b2b7a;
 }
 
 .contactForm .row100 input[type="submit"] {
     background: #fff;
-    color: #595959;
+    color: #2b2b2b;
     max-width: 100px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -264,7 +311,7 @@ p {
 
 .contactForm .row100 input[type="submit"]:hover {
     background: #fff;
-    color: #595959bf;
+    color: #2b2b2b7a;
     max-width: 100px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -275,10 +322,15 @@ p {
 .social i {
     margin: 10px 15px;
     font-size: 40px;
-    color: #fff;
+    color: #2b2b2b;
+}
+
+.social i:hover {
+    color: #2b2b2b7a;
 }
 
 .copyright {
+    font-size: 15px;
     margin: 20px 0 0 0;
 }
 
@@ -323,7 +375,7 @@ p {
 
     header ul {
         position: absolute;
-        top: 59px;
+        top: 41px;
         left: 0;
         width: 100%;
         height: 100vh;
@@ -338,7 +390,6 @@ p {
         visibility: visible;
         opacity: 1;
         display: block;
-        padding-top: 20px;
     }
 
     header.active ul li a {
@@ -356,12 +407,12 @@ p {
         padding: 0 50px;
     }
 
-    .sec {
-        padding: 100px 50px 50px 50px;
+    .services .box {
+        width: 90%;
     }
 
-    .services .box {
-        width: 100%;
+    .services .box .content p, .services .box .content ul li {
+        font-size: 14px;
     }
 
     .row100 {
@@ -371,9 +422,39 @@ p {
     .contactForm .row100 .inputBx50, .contactForm .row100 .inputBx100 {
         width: 100%;
         margin: 0;
+        padding: 10px;
     }
 
     h3 {
         font-size: 36px;
+    }
+
+    .banner>div>h1 {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 80px;
+        margin-top: 20px;
+    }
+    
+    .banner>div>h3 {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 50px;
+        margin: 10px 10px 0 10px;
+    }
+
+    .about-pic {
+        margin-left: 15%;
+    }
+
+    .about-box {
+        padding: 0;
+        margin: 10px 0px;
+    }
+    
+    .sec {
+        padding: 10px 0px;
     }
 }
