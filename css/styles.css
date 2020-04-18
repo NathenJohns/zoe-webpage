@@ -135,7 +135,7 @@ header.sticky ul li a:hover {
 .about-box {
     height: 100%;
     width: 100%;
-    background: #2b2b2b;
+    background:#b2d1d1;
     border: 1px solid #2b2b2b;
     padding: 0 25px;
 }
@@ -146,7 +146,7 @@ header.sticky ul li a:hover {
 }
 
 .about-info {
-    background: #2b2b2b;
+    background: #b2d1d1;
     position: relative;
     grid-gap: 30px;
     max-width: 100%;
@@ -163,13 +163,16 @@ header.sticky ul li a:hover {
 }
 
 .about-info p {
-    color: #fff;
+    color: #2b2b2b;
     font-size: 18px;
 }
 
 #packages {
-    background: #2b2b2b;
+    background: #d1b2b2;
     padding-top: 50px;
+    border-top: 1px solid #2b2b2b;
+    border-bottom: 1px solid #2b2b2b;
+
 }
 
 .mxw800p {
@@ -459,5 +462,9 @@ p {
     
     .sec {
         padding: 10px 0px;
+    }
+
+    svg {
+        display: none;
     }
 }
